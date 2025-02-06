@@ -1,0 +1,1 @@
+![Final preview](./product_page.PNG)
