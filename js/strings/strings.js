@@ -246,4 +246,4 @@ function formatted_string(inp1, inp2, inp3){
 
 }
 // ○ Test Data:
-console.log(formatted_string('0000', 123, 'l')); // "0123"
+//console.log(formatted_string('0000', 123, 'l')); // "0123"
