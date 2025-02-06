@@ -137,53 +137,113 @@ function uncamelize(inp){
 }
 // Test Data:
 // console.log(uncamelize('helloWorld')); // "hello world"
-
 // ○ console.log(uncamelize('helloWorld','-')); // "hello-world"
+
 // 13. Repeat String
 // ○ Write a JavaScript function to concatenate a given string n times.
+function repeat(inp,count){
+    inp = inp.repeat(count)
+    return inp;
+}
 // ○ Test Data:
 // console.log(repeat('Ha!', 3)); // "Ha!Ha!Ha!"
 
 // 14. Insert in String
-// ○ Write a JavaScript function to insert a string within another string at a given
-// position.
-
+// ○ Write a JavaScript function to insert a string within another string at a given position.
+function insert(inp1, inp2, pos){
+    inp1 = inp1.slice(0, pos) + inp2 + inp1.slice(18)
+    return inp1;
+}
 // Test Data:
 // console.log(insert('We are doing some exercises.', 'JavaScript ', 18));
 // ○ // "We are doing some JavaScript exercises."
+
 // 15. Humanize Format
-// ○ Write a JavaScript function that formats a number with the correct suffix (1st,
-// 2nd, etc.).
+// ○ Write a JavaScript function that formats a number with the correct suffix (1st, 2nd, etc.).
+function humanize_format(inp){
+    if(typeof inp === 'number'){
+        let k = inp % 10;
+        let j = inp % 100;
+
+        if( k === 1 && j !== 11){
+            return inp + "st"
+        }else if( k=== 2 && j !== 12){
+            return inp + "nd"
+        }else if( k === 3 && j !== 13){
+            return inp + "rd"
+        }else{
+            return number + "th"
+        }
+    }
+}
 // ○ Test Data:
 // console.log(humanize_format(301)); // "301st"
 
 // 16. Truncate String with Ellipsis
 // ○ Write a JavaScript function to truncate a string and append "...".
-
+function text_truncate(inp1, count, inp2){
+    if(inp1.length > count){
+        return inp1.slice(0, count) + " " + inp2
+    }
+}
 // Test Data:
 // console.log(text_truncate('We are doing JS string exercises.', 15, '!!'));
-
 // ○ // "We are doing !!"
-// 17. Chop String into Chunks
 
+// 17. Chop String into Chunks
 // ○ Write a JavaScript function to chop a string into chunks.
+function string_chop(inp, count){
+    let chops = []
+    for( let i=0; i < inp.length; i += count){
+        chops.push(inp.slice(i, i + count))
+    }
+    return chops
+}
 // ○ Test Data:
 // console.log(string_chop('w3resource', 3)); // ["w3r", "eso", "urc", "e"]
 
 // 18. Count Substring Occurrences
 // ○ Write a JavaScript function to count occurrences of a substring in a string.
+function count(inp1, inp2){
+    inp1 = inp1.toLowerCase();
+    inp2 = inp2.toLowerCase();
 
+    let count = 0;
+    let pos = 0;
+
+    for( pos; pos <= inp1.length-inp2.length; pos++ ){
+        if( inp1.slice(pos, pos + inp2.length) === inp2){
+          count++  
+        }
+    }
+    return count;
+}
 // Test Data:
-// console.log(count("The quick brown fox jumps over the lazy dog", 'the'));
-
+//console.log(count("The quick brown fox jumps over the lazy dog", 'the'));
 // ○ // Output: 2
+
 // 19. Reverse Binary Representation
-// ○ Write a JavaScript function that reverses the binary representation of a number
-// and returns its decimal form.
+// ○ Write a JavaScript function that reverses the binary representation of a number and returns its decimal form.
+function reverse_binary(inp){
+    let binary = inp.toString(2)
+    binary = binary.split('').reverse().join('')
+    binary = parseInt(binary, 2)
+    return binary
+}
 // ○ Test Data:
 // console.log(reverse_binary(100)); // 19
 
 // 20. Pad String to Length
 // ○ Write a JavaScript function to pad a string to a specified length.
+function formatted_string(inp1, inp2, inp3){
+    let numString = inp2.toString();
+
+    if(inp1.length >= numString.length){
+        return inp1
+       }
+
+   return inp1.padStart(numString.length, inp3)
+
+}
 // ○ Test Data:
-// console.log(formatted_string('0000', 123, 'l')); // "0123"
+console.log(formatted_string('0000', 123, 'l')); // "0123"
