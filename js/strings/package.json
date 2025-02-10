@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev1": "nodemon strings1",
     "dev": "nodemon strings",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
