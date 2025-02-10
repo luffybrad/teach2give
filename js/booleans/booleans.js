@@ -114,10 +114,12 @@ answ = "Adds an extra layer of security making it harder for unauthorized users 
 // 3. Balance Verification:
 // ○ Why is it necessary to check the account balance before allowing a withdrawal?
 // What risks are involved if this step is skipped?
+answ = "Ensure users don't withdraw more than they have in their account. Helps maintain account integrity"
 // 4. Daily Transaction Limit:
-// ○ What purpose does the daily transaction limit serve? How does it help in
-// preventing fraudulent or excessive withdrawals?
+// ○ What purpose does the daily transaction limit serve? How does it help in preventing fraudulent or excessive withdrawals?
+answ = "Prevenst exceessive withdrawals. Helps prevent fraud by settiing limits based on user's typical transactions"
 // 5. Improvement:
 // ○ If you were to add extra features, such as fraud detection (e.g., detecting
 // abnormal withdrawal patterns), how would you go about doing this? What
 // additional data would you track to detect fraud?
+answ = "I'd track unusual withdrawal patterns using rule-based dtection systems. I'd track biometric features e.g fingerprint authorization"
