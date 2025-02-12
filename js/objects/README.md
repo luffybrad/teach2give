@@ -4,3 +4,5 @@
 ```pnpm install```
 * Run the json file
 ```npx json-server db.json```
+- Display should look like: 
+![Table preview](./productsjson.png)
