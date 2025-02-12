@@ -1,0 +1,1 @@
+![Calculator preview](./calc.png)
