@@ -1,8 +1,8 @@
 * Run the following commands to start the json-server
-```npm install```
+- ```npm install```
 * Alternatively
-```pnpm install```
+- ```pnpm install```
 * Run the json file
-```npx json-server db.json```
+- ```npx json-server db.json```
 - Display should look like: 
-![Table preview](./productsjson.png)
+- ![Table preview](./productsjson.png)
