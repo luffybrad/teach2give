@@ -1,0 +1,57 @@
+       /* General table styling */
+       #productTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Table header styling */
+    #productTable thead {
+        background-color: #6200ea; /* Purple header */
+        color: white;
+    }
+
+    #productTable th {
+        padding: 12px 15px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /* Table row styling */
+    #productTable tbody tr {
+        border-bottom: 1px solid #dddddd;
+        transition: background-color 0.3s ease;
+    }
+
+    #productTable tbody tr:nth-of-type(even) {
+        background-color: #f9f9f9; /* Alternate row color */
+    }
+
+    #productTable tbody tr:last-of-type {
+        border-bottom: 2px solid #6200ea; /* Bottom border for last row */
+    }
+
+    #productTable tbody tr:hover {
+        background-color: #f1f1f1; /* Hover effect */
+    }
+
+    /* Table cell styling */
+    #productTable td {
+        padding: 12px 15px;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    /* Add some spacing and alignment */
+    #productTable td, #productTable th {
+        text-align: left;
+    }
+
+    /* Add a subtle border to the table */
+    #productTable {
+        border: 1px solid #dddddd;
+    }
