@@ -1,57 +1,83 @@
-       /* General table styling */
-       #productTable {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        font-family: Arial, sans-serif;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #34495e;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+table td {
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
     }
 
-    /* Table header styling */
-    #productTable thead {
-        background-color: #6200ea; /* Purple header */
-        color: white;
+    table th,
+    table td {
+        padding: 10px;
     }
-
-    #productTable th {
-        padding: 12px 15px;
-        text-align: left;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    /* Table row styling */
-    #productTable tbody tr {
-        border-bottom: 1px solid #dddddd;
-        transition: background-color 0.3s ease;
-    }
-
-    #productTable tbody tr:nth-of-type(even) {
-        background-color: #f9f9f9; /* Alternate row color */
-    }
-
-    #productTable tbody tr:last-of-type {
-        border-bottom: 2px solid #6200ea; /* Bottom border for last row */
-    }
-
-    #productTable tbody tr:hover {
-        background-color: #f1f1f1; /* Hover effect */
-    }
-
-    /* Table cell styling */
-    #productTable td {
-        padding: 12px 15px;
-        font-size: 14px;
-        color: #333333;
-    }
-
-    /* Add some spacing and alignment */
-    #productTable td, #productTable th {
-        text-align: left;
-    }
-
-    /* Add a subtle border to the table */
-    #productTable {
-        border: 1px solid #dddddd;
-    }
+}
