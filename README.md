@@ -1,7 +1,7 @@
 ### Assignment 1!
 
-![Image](./qrcode.PNG)
+![Image](./html-css/1//qrcode.PNG)
 
 ### Assignment 2!
 
-![Image](./google_prof.PNG)
+![Image](./html-css/2/google_prof.PNG)
