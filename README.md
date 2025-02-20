@@ -15,3 +15,11 @@
 
 ### Assignment 4!
 ![Final desktop](./html-css/4/images/snap-desktop.PNG)
+
+
+### Assignment 5!
+![Table preview](./js/objects/productsjson.png)
+
+
+### Assignment 6!
+![Calculator preview](./js/functions/Calculator/calc.png)
