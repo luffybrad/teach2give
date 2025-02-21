@@ -23,3 +23,6 @@
 
 ### Assignment 6!
 ![Calculator preview](./js/functions/Calculator/calc.png)
+
+
+### Assignment 7!
