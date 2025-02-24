@@ -23,3 +23,5 @@
 
 ### Assignment 6!
 ![Calculator preview](./js/functions/Calculator/calc.png)
+
+
